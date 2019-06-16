@@ -1,15 +1,18 @@
 <template>
   <div class="screen-wrapper">
-    <Search class="home__search" />
+    <Search class="card"/>
+    <Result class="card"/>
   </div>
 </template>
 
 <script>
   import Search from '@/components/Search';
+  import Result from '@/components/Result';
 
   export default {
     components: {
-      Search
+      Search,
+      Result
     }
   }
 </script>
@@ -20,11 +23,11 @@
     padding: 24px;
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
   }
-  .home__search {
-    min-height: 320px;
-    align-self: center;
+  .card {
+    height: 320px;
+    width: 402px;
   }
 </style>
 
